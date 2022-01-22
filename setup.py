@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='MockupEngineer',
-    version='2022.22.01.2',
+    version='2022.22.01.3',
     packages=['MockupModule', 'MockupModule.templates'],
     url='https://github.com/ulbwazhine/MockupEngineer',
     license='MIT',
