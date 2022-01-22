@@ -6,6 +6,8 @@ from MockupModule import MockupEngineer
 def main():
     mockup = MockupEngineer()
 
+    mockup.__create_examples__('/Users/ulbwa/Documents/MockupEngineer/MockupModule/templates/example.jpg')
+
     i = 0
     for template in mockup.templates:
         print('[{}] {} {} [{}] ({})'.format(i, template.manufacturer, template.name, template.resolution, template.year))

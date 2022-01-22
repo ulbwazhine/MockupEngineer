@@ -4,7 +4,7 @@ from importlib import import_module
 
 from typing import List
 
-from PIL import Image, ImageChops
+from PIL import Image
 
 from MockupModule import templates
 from MockupModule.utils import random_string
@@ -24,9 +24,24 @@ class MockupEngineer:
                 import_module(name='MockupModule.templates.' + template,
                               package='MockupModule.templates.' + template + '.Device'), 'Device')())
 
-    def screenshot_resize(self, screenshot: str, width: int, height: int) -> str:
-        name = '{}/screenshot{}.png'.format(generated_path, random_string(16))
-        img = Image.open(screenshot).resize((width, height), Image.ANTIALIAS)
+    def __create_examples__(self, example_path: str) -> None:
+        for template in self.templates:
+            if os.path.isfile(template.example_path):
+                os.remove(template.example_path)
+
+            mockup_path = self.generate(template, example_path, orientation='portrait')
+            mockup_img = Image.open(mockup_path)
+            background_img = Image.new('RGBA', mockup_img.size, (255, 255, 255, 255))
+            background_img.paste(mockup_img, (0, 0), mockup_img)
+
+            background_img.save(template.example_path)
+
+            os.remove(mockup_path)
+
+    @staticmethod
+    def resize(image: str, width: int, height: int) -> str:
+        name = '{}/image{}.png'.format(generated_path, random_string(16))
+        img = Image.open(image).resize((width, height), Image.ANTIALIAS)
         img.save(name)
 
         return name
@@ -40,9 +55,11 @@ class MockupEngineer:
                 dicted[template.type] = [template]
         return dicted
 
-    def generate(self, template: templates.Template, screenshot: str, color: str = None, orientation: str = None):
+    def generate(self, template: templates.Template,
+                 screenshot_path: str, color: str = None,
+                 orientation: str = None) -> str:
         if not orientation:
-            img = Image.open(screenshot)
+            img = Image.open(screenshot_path)
             width, height = img.size
             orientation = 'portrait' if height > width or height == width else 'landscape'
 
@@ -59,7 +76,7 @@ class MockupEngineer:
             screen_y = template.__landscape_y__
             screen_mask = template.__landscape_mask__ if template.__use_mask__ else None
 
-        screenshot = self.screenshot_resize(screenshot, screen_width, screen_height)
+        screenshot = self.resize(screenshot_path, screen_width, screen_height)
 
         for template_color in template.colors:
             if template_color.color == color:
@@ -70,7 +87,7 @@ class MockupEngineer:
             template_path = template.colors[-1].portrait_path \
                 if orientation == 'portrait' else template.colors[-1].landscape_path
 
-        name = '{}/mockup{}.png'.format(generated_path, random_string(16))
+        mockup_path = '{}/mockup{}.png'.format(generated_path, random_string(16))
 
         template_img = Image.open(template_path)
         mask_img = Image.new('RGBA', template_img.size, (0, 0, 0, 0))
@@ -81,6 +98,6 @@ class MockupEngineer:
         if screen_mask:
             screen_mask = Image.open(screen_mask).convert('L')
             mask_img.putalpha(screen_mask)
-        mask_img.save(name)
+        mask_img.save(mockup_path)
 
-        return name
+        return mockup_path

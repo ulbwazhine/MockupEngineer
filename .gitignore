@@ -1,5 +1,4 @@
 .DS_Store
 .idea
 *.pyc
-./MockupModule/generated/*
 __pycache__
