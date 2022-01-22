@@ -5,9 +5,10 @@ from MockupModule import MockupEngineer
 
 def main():
     mockup = MockupEngineer()
+
     i = 0
     for template in mockup.templates:
-        print('[{}] {} {} ({})'.format(i, template.manufacturer, template.name, template.year))
+        print('[{}] {} {} [{}] ({})'.format(i, template.manufacturer, template.name, template.resolution, template.year))
         i += 1
     template = mockup.templates[int(input('Choose device: '))]
     print('- - - - - - - - - -')

@@ -1,49 +1,30 @@
 from dataclasses import dataclass
 
-from MockupModule.templates import templates_path, TemplateResolution, TemplateColor, Template
+from MockupModule.templates import Template
 
 
 @dataclass
 class Device(Template):
-    def __post_init__(self):
+    def __device_init__(self):
         self.manufacturer = 'Apple'
         self.name = 'iPhone 12'
         self.type = 'phone'
         self.year = 2020
-        self.example_path = templates_path + '/iphone12/example.png'
-        self.portrait_resolution = TemplateResolution(width=1170, height=2532)
-        self.landscape_resolution = TemplateResolution(width=2532, height=1170)
+        self.resolution = '{width} x {height}'.format(width=1170, height=2532)
 
-        self.colors = [
-            TemplateColor(
-                color='Black',
-                portrait_path=templates_path + '/iphone12/black/portrait.png',
-                landscape_path=templates_path + '/iphone12/black/landscape.png',
-            ),
-            TemplateColor(
-                color='Blue',
-                portrait_path=templates_path + '/iphone12/blue/portrait.png',
-                landscape_path=templates_path + '/iphone12/blue/landscape.png',
-            ),
-            TemplateColor(
-                color='Green',
-                portrait_path=templates_path + '/iphone12/green/portrait.png',
-                landscape_path=templates_path + '/iphone12/green/landscape.png',
-            ),
-            TemplateColor(
-                color='PRODUCT RED',
-                portrait_path=templates_path + '/iphone12/red/portrait.png',
-                landscape_path=templates_path + '/iphone12/red/landscape.png',
-            ),
-            TemplateColor(
-                color='White',
-                portrait_path=templates_path + '/iphone12/white/portrait.png',
-                landscape_path=templates_path + '/iphone12/white/landscape.png',
-            )
-        ]
+        self.__template_path__ = 'iphone12'
+        self.__colors__ = {"Black": 'black',
+                           "Blue": 'blue',
+                           "Green": 'green',
+                           "PRODUCT RED": 'red',
+                           "White": 'white'}
 
-        self.__portrait_width__ = 180
-        self.__portrait_height__ = 180
-        self.__landscape_width__ = 180
-        self.__landscape_height__ = 180
+        self.__portrait_width__ = 1170
+        self.__portrait_height__ = 2532
+        self.__portrait_x__ = 180
+        self.__portrait_y__ = 180
 
+        self.__landscape_width__ = 2532
+        self.__landscape_height__ = 1170
+        self.__landscape_x__ = 180
+        self.__landscape_y__ = 180

@@ -4,7 +4,7 @@ from importlib import import_module
 
 from typing import List
 
-from PIL import Image
+from PIL import Image, ImageChops
 
 from MockupModule import templates
 from MockupModule.utils import random_string
@@ -26,8 +26,7 @@ class MockupEngineer:
 
     def screenshot_resize(self, screenshot: str, width: int, height: int) -> str:
         name = '{}/screenshot{}.png'.format(generated_path, random_string(16))
-        img = Image.open(screenshot)
-        img = img.resize((width, height), Image.ANTIALIAS)
+        img = Image.open(screenshot).resize((width, height), Image.ANTIALIAS)
         img.save(name)
 
         return name
@@ -42,26 +41,23 @@ class MockupEngineer:
         return dicted
 
     def generate(self, template: templates.Template, screenshot: str, color: str = None, orientation: str = None):
-        self.logger.info(
-            'Generating: {}'.format(
-                ', '.join(
-                    [': '.join([str(a).upper(), str(b)]) for a, b in template.__dict__.items()])))
-
         if not orientation:
             img = Image.open(screenshot)
             width, height = img.size
             orientation = 'portrait' if height > width or height == width else 'landscape'
 
         if orientation == 'portrait':
-            screen_width = template.portrait_resolution.width
-            screen_height = template.portrait_resolution.height
-            width_coordinate = template.__portrait_width__
-            height_coordinate = template.__portrait_height__
+            screen_width = template.__portrait_width__
+            screen_height = template.__portrait_height__
+            screen_x = template.__portrait_x__
+            screen_y = template.__portrait_y__
+            screen_mask = template.__portrait_mask__ if template.__use_mask__ else None
         else:
-            screen_width = template.landscape_resolution.width
-            screen_height = template.landscape_resolution.height
-            width_coordinate = template.__landscape_width__
-            height_coordinate = template.__landscape_height__
+            screen_width = template.__landscape_width__
+            screen_height = template.__landscape_height__
+            screen_x = template.__landscape_x__
+            screen_y = template.__landscape_y__
+            screen_mask = template.__landscape_mask__ if template.__use_mask__ else None
 
         screenshot = self.screenshot_resize(screenshot, screen_width, screen_height)
 
@@ -79,9 +75,12 @@ class MockupEngineer:
         template_img = Image.open(template_path)
         mask_img = Image.new('RGBA', template_img.size, (0, 0, 0, 0))
         screenshot_img = Image.open(screenshot)
-        mask_img.paste(screenshot_img, (width_coordinate, height_coordinate))
+        mask_img.paste(screenshot_img, (screen_x, screen_y))
         mask_img.paste(template_img, (0, 0), template_img)
 
+        if screen_mask:
+            screen_mask = Image.open(screen_mask).convert('L')
+            mask_img.putalpha(screen_mask)
         mask_img.save(name)
 
         return name

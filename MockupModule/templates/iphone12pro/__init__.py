@@ -1,44 +1,29 @@
 from dataclasses import dataclass
 
-from MockupModule.templates import templates_path, TemplateResolution, TemplateColor, Template
+from MockupModule.templates import Template
 
 
 @dataclass
 class Device(Template):
-    def __post_init__(self):
+    def __device_init__(self):
         self.manufacturer = 'Apple'
         self.name = 'iPhone 12 Pro'
         self.type = 'phone'
         self.year = 2020
-        self.example_path = templates_path + '/iphone12pro/example.png'
-        self.portrait_resolution = TemplateResolution(width=1170, height=2532)
-        self.landscape_resolution = TemplateResolution(width=2532, height=1170)
+        self.resolution = '{width} x {height}'.format(width=1170, height=2532)
 
-        self.colors = [
-            TemplateColor(
-                color='Gold',
-                portrait_path=templates_path + '/iphone12pro/gold/portrait.png',
-                landscape_path=templates_path + '/iphone12pro/gold/landscape.png',
-            ),
-            TemplateColor(
-                color='Graphite',
-                portrait_path=templates_path + '/iphone12pro/graphite/portrait.png',
-                landscape_path=templates_path + '/iphone12pro/graphite/landscape.png',
-            ),
-            TemplateColor(
-                color='Pacific Blue',
-                portrait_path=templates_path + '/iphone12pro/pacificblue/portrait.png',
-                landscape_path=templates_path + '/iphone12pro/pacificblue/landscape.png',
-            ),
-            TemplateColor(
-                color='Silver',
-                portrait_path=templates_path + '/iphone12pro/silver/portrait.png',
-                landscape_path=templates_path + '/iphone12pro/silver/landscape.png',
-            )
-        ]
+        self.__template_path__ = 'iphone12pro'
+        self.__colors__ = {"Gold": 'gold',
+                           "Graphite": 'graphite',
+                           "Pacific Blue": 'pacificblue',
+                           "Silver": 'silver'}
 
-        self.__portrait_width__ = 180
-        self.__portrait_height__ = 180
-        self.__landscape_width__ = 180
-        self.__landscape_height__ = 180
+        self.__portrait_width__ = 1170
+        self.__portrait_height__ = 2532
+        self.__portrait_x__ = 180
+        self.__portrait_y__ = 180
 
+        self.__landscape_width__ = 2532
+        self.__landscape_height__ = 1170
+        self.__landscape_x__ = 180
+        self.__landscape_y__ = 180
