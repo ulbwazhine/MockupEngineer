@@ -5,7 +5,7 @@
 
 ## Example
 
-<img align="center" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupModule/templates/iphone12promax/example.png" alt="Apple iPhone 12 Pro Max">
+<img align="center" width="350" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupModule/templates/iphone12promax/example.png" alt="Apple iPhone 12 Pro Max">
 
 ## Usage
 
