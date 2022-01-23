@@ -1,2 +1,2 @@
-include readme.md
-include requirements.txt
+global-include *.md *.png *.txt
+global-exclude generated/*.png
