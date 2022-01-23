@@ -175,8 +175,8 @@ Full list of all currently supported mockups
 You can help the project by adding support for new mockups by contributing on [GitHub](https://github.com/ulbwazhine/MockupEngineer).
 
 ## Links
-* [Author](https://t.me/ulbwa)
+* [Author](https://ulbwa.github.io)
 * [GitHub](https://github.com/ulbwazhine/MockupEngineer)
 * [PyPI](https://pypi.org/project/MockupEngineer/)
-* [Donate](https://www.tinkoff.ru/sl/7ffeONwPk4f)
+* [Donate](https://ulbwa.github.io/go?to=donate)
 
