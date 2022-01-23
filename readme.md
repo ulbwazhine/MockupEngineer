@@ -13,6 +13,8 @@
 * [Example](#example)
 * [Install](#install)
 * [Usage](#usage)
+  * [In Python console]()
+  * [As a standalone application]()
 * [List of supported mockups](#list-of-supported-mockups)
   * [Phones](#phones)
   * [Tablets](#tablets)
@@ -34,7 +36,7 @@ $ python -m pip install MockupEngineer
 
 ## Usage
 
-In Python console:
+#### In Python console:
 ```python
 from MockupModule import MockupEngineer
 
@@ -49,7 +51,7 @@ mockup.generate(template=mockup.templates[0],
 >>> /path/to/mockup
 ```
 
-As a standalone application:
+#### As a standalone application:
 ```
 $ python -m MockupModule
 ```
