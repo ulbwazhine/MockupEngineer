@@ -102,7 +102,7 @@ class MockupEngineer:
             screen_y = template.__landscape_y__
             screen_mask = template.__landscape_mask__ if template.__use_mask__ else None
 
-        screenshot = self.resize(screenshot_path, screen_width, screen_height)
+        resized_screenshot_path = self.resize(screenshot_path, screen_width, screen_height)
 
         for template_color in template.colors:
             if template_color.color == color:
@@ -117,7 +117,7 @@ class MockupEngineer:
 
         template_img = Image.open(template_path)
         mask_img = Image.new('RGBA', template_img.size, (0, 0, 0, 0))
-        screenshot_img = Image.open(screenshot)
+        screenshot_img = Image.open(resized_screenshot_path)
         mask_img.paste(screenshot_img, (screen_x, screen_y))
         mask_img.paste(template_img, (0, 0), template_img)
 
@@ -125,5 +125,7 @@ class MockupEngineer:
             screen_mask = Image.open(screen_mask).convert('L')
             mask_img.putalpha(screen_mask)
         mask_img.save(mockup_path)
+
+        os.remove(resized_screenshot_path)
 
         return mockup_path
