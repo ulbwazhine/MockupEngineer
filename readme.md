@@ -37,12 +37,13 @@ $ python -m pip install MockupEngineer
 ## Usage
 
 #### In Python console:
+
 ```python
-from MockupModule import MockupEngineer
+from MockupEngineer import MockupEngineerInstance
 
-mockup = MockupEngineer()
+mockup = MockupEngineerInstance()
 
-mockup.generate(template=mockup.templates[0], 
+mockup.generate(template=mockup.templates[0],
                 screenshot_path='/path/to/screenshot',
                 color=mockup.templates[0].colors[0].color)
 ```
