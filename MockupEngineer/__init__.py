@@ -21,8 +21,8 @@ class MockupEngineerInstance:
 
         for template in templates.ALL_TEMPLATES:
             self.templates.append(getattr(
-                import_module(name='MockupModule.templates.' + template,
-                              package='MockupModule.templates.' + template + '.Device'), 'Device')())
+                import_module(name='MockupEngineer.templates.' + template,
+                              package='MockupEngineer.templates.' + template + '.Device'), 'Device')())
 
     def __create_mockups_list__(self) -> str:
         output = list()
@@ -37,7 +37,7 @@ class MockupEngineerInstance:
             for template in item:
                 output.append(
                     '* [{manufacturer} {name}](https://raw.githubusercontent.com/'
-                    'ulbwazhine/MockupEngineer/main/MockupModule/'
+                    'ulbwazhine/MockupEngineer/main/MockupEngineer/'
                     'templates/{path}/example.png) [{resolution}] ({year})'.format(
                         manufacturer=template.manufacturer, name=template.name,
                         path=template.__template_path__, resolution=template.resolution,
