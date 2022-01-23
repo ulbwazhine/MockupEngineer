@@ -1,6 +1,11 @@
 <div align="center">
   <h1>MockupEngineer</h1>
-  <p><img src="https://img.shields.io/pypi/dm/MockupEngineer"><img src="https://img.shields.io/pypi/v/MockupEngineer?label=version"></p>
+  <p>
+    <img src="https://img.shields.io/pypi/dm/MockupEngineer">
+    <img src="https://img.shields.io/pypi/v/MockupEngineer?label=version">
+    <img src="https://img.shields.io/pypi/l/MockupEngineer">
+    <img src="https://img.shields.io/github/repo-size/ulbwazhine/MockupEngineer">
+  </p>
   <p>An simple library for creating beautiful screenshots.</p>
 </div>
 
@@ -160,4 +165,5 @@ You can help the project by adding support for new mockups by contributing on [G
 * [Author](https://t.me/ulbwa)
 * [GitHub](https://github.com/ulbwazhine/MockupEngineer)
 * [PyPI](https://pypi.org/project/MockupEngineer/)
+* [Donate](https://www.tinkoff.ru/sl/7ffeONwPk4f)
 
