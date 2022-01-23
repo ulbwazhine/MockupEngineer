@@ -54,7 +54,7 @@ mockup.generate(template=mockup.templates[0],
 
 #### As a standalone application:
 ```
-$ python -m MockupModule
+$ python -m MockupEngineer
 ```
 
 ## List of supported mockups
