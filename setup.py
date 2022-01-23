@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='MockupEngineer',
-    version='2022.23.01.10',
+    version='2022.23.01.11',
     packages=find_packages(),
     url='https://github.com/ulbwazhine/MockupEngineer',
     license='MIT',
