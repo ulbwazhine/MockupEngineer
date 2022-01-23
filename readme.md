@@ -9,6 +9,17 @@
   <p>An simple library for creating beautiful screenshots.</p>
 </div>
 
+## Navigation
+* [Example](#example)
+* [Install](#install)
+* [Usage](#usage)
+* [List of supported mockups](#list-of-supported-mockups)
+  * [Phones](#phones)
+  * [Tablets](#tablets)
+  * [Computers](#computers)
+  * [Wearable devices](#wearable-devices)
+* [Links](#links)
+
 ## Example
 
 <div align="center">
