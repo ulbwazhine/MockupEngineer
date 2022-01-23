@@ -10,17 +10,17 @@
 </div>
 
 ## Navigation
-* [Example](#example)
-* [Install](#install)
-* [Usage](#usage)
-  * [In Python console](#in-python-console)
-  * [As a standalone application](#as-a-standalone-application)
-* [List of supported mockups](#list-of-supported-mockups)
-  * [Phones](#phones)
-  * [Tablets](#tablets)
-  * [Computers](#computers)
-  * [Wearable devices](#wearable-devices)
-* [Links](#links)
+* [Example](https://github.com/ulbwazhine/MockupEngineer#example)
+* [Install](https://github.com/ulbwazhine/MockupEngineer#install)
+* [Usage](https://github.com/ulbwazhine/MockupEngineer#usage)
+  * [In Python console](https://github.com/ulbwazhine/MockupEngineer#in-python-console)
+  * [As a standalone application](https://github.com/ulbwazhine/MockupEngineer#as-a-standalone-application)
+* [List of supported mockups](https://github.com/ulbwazhine/MockupEngineer#list-of-supported-mockups)
+  * [Phones](https://github.com/ulbwazhine/MockupEngineer#phones)
+  * [Tablets](https://github.com/ulbwazhine/MockupEngineer#tablets)
+  * [Computers](https://github.com/ulbwazhine/MockupEngineer#computers)
+  * [Wearable devices](https://github.com/ulbwazhine/MockupEngineer#wearable-devices)
+* [Links](https://github.com/ulbwazhine/MockupEngineer#links)
 
 ## Example
 
