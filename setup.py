@@ -1,10 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
     name='MockupEngineer',
-    version='2022.22.01.13',
-    packages=['MockupModule', 'MockupModule.templates'],
+    version='2022.23.01.1',
+    packages=find_packages(exclude=['MockupModule*']),
     url='https://github.com/ulbwazhine/MockupEngineer',
     license='MIT',
     author='Ulbwazhine',
