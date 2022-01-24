@@ -30,7 +30,7 @@
 </div>
 
 ## Install
-```shell
+```sh
 $ python -m pip install MockupEngineer
 ```
 
@@ -53,7 +53,7 @@ mockup.generate(template=mockup.templates[0],
 ```
 
 #### As a standalone application:
-```shell
+```sh
 $ python -m MockupEngineer
 ```
 
