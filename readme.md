@@ -48,12 +48,12 @@ mockup.generate(template=mockup.templates[0],
                 color=mockup.templates[0].colors[0].color)
 ```
 
-```
+```console
 >>> /path/to/mockup
 ```
 
 #### As a standalone application:
-```
+```shell
 $ python -m MockupEngineer
 ```
 
