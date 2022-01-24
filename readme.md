@@ -30,8 +30,8 @@
 </div>
 
 ## Install
-```sh
-$ python -m pip install MockupEngineer
+```console
+$ python3 -m pip install MockupEngineer
 ```
 
 ## Usage
@@ -53,8 +53,8 @@ mockup.generate(template=mockup.templates[0],
 ```
 
 #### As a standalone application:
-```sh
-$ python -m MockupEngineer
+```console
+$ python3 -m MockupEngineer
 ```
 
 ## List of supported mockups
