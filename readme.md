@@ -30,7 +30,7 @@
 </div>
 
 ## Install
-```
+```shell
 $ python -m pip install MockupEngineer
 ```
 
