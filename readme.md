@@ -25,7 +25,7 @@
 ## Example
 
 <div align="center">
-  <img style="width:100%; max-width:60px;" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/example.png" alt="Apple iPhone 12 Pro Max Mockup">
+  <img style="width:350px;" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/example.png" alt="Apple iPhone 12 Pro Max Mockup">
   <p>Apple iPhone 12 Pro Max Mockup</p>
 </div>
 
