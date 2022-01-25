@@ -20,7 +20,7 @@ def main():
     print('- - - - - - - - - -')
     screenshot = input('Enter path to screenshot: ')
     print('- - - - - - - - - -\nWorking...')
-    mockup = mockup.generate(template, screenshot, color)
+    mockup = mockup.generate(template, screenshot, color, external_storage=True)
     print('- - - - - - - - - -\nSuccess: {}'.format(mockup))
     os.system('open {}'.format(mockup))
 

@@ -13,8 +13,8 @@
 * [Example](https://github.com/ulbwazhine/MockupEngineer#example)
 * [Install](https://github.com/ulbwazhine/MockupEngineer#install)
 * [Usage](https://github.com/ulbwazhine/MockupEngineer#usage)
-  * [In Python console](https://github.com/ulbwazhine/MockupEngineer#in-python-console)
   * [As a standalone application](https://github.com/ulbwazhine/MockupEngineer#as-a-standalone-application)
+  * [In Python console](https://github.com/ulbwazhine/MockupEngineer#in-python-console)
 * [List of supported mockups](https://github.com/ulbwazhine/MockupEngineer#list-of-supported-mockups)
   * [Phones](https://github.com/ulbwazhine/MockupEngineer#phones)
   * [Tablets](https://github.com/ulbwazhine/MockupEngineer#tablets)
@@ -36,6 +36,11 @@ $ python3 -m pip install MockupEngineer
 
 ## Usage
 
+#### As a standalone application:
+```console
+$ python3 -m MockupEngineer
+```
+
 #### In Python console:
 
 ```python
@@ -52,10 +57,12 @@ mockup.generate(template=mockup.templates[0],
 >>> /path/to/mockup
 ```
 
-#### As a standalone application:
-```console
-$ python3 -m MockupEngineer
-```
+##### `MockupEngineerInstance.generate` parameters:
+   * `template`: *Template* — Device template model, must be passed from *MockupEngineerInstance.templates* or *MockupEngineerInstance.get_templates()*.
+   * `screenshot_path`: *str* — Absolute path to the image in **JPG, PNG format**.
+   * `color`: *Optional[str]* — Optional parameter, force device color. Must be passed according to *Template.colors[**n**].color*
+   * `orientation`: *str* — Optional parameter, force device orientation. Must be *landscape* or *portrait*.
+   * `external_storage`: *Optional[bool]* — Optional parameter, true if you need to upload mockup on [TemporaryStorage](https://github.com/ulbwazhine/TemporaryStorage) (0x0.st etc)
 
 ## List of supported mockups
 

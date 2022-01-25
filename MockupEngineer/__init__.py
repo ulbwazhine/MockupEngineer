@@ -1,9 +1,9 @@
 import logging
 import os
+
+from TemporaryStorage import TemporaryStorageInstance
 from importlib import import_module
-
 from typing import List
-
 from PIL import Image
 
 from MockupEngineer import templates
@@ -18,6 +18,7 @@ class MockupEngineerInstance:
     def __init__(self):
         self.logger = logging.getLogger('MockupEngineer')
         self.templates: List[templates.Template] = []
+        self.storage = TemporaryStorageInstance()
 
         for template in templates.ALL_TEMPLATES:
             self.templates.append(getattr(
@@ -83,7 +84,7 @@ class MockupEngineerInstance:
 
     def generate(self, template: templates.Template,
                  screenshot_path: str, color: str = None,
-                 orientation: str = None) -> str:
+                 orientation: str = None, external_storage: bool = False) -> str:
         if not orientation:
             img = Image.open(screenshot_path)
             width, height = img.size
@@ -128,4 +129,13 @@ class MockupEngineerInstance:
 
         os.remove(resized_screenshot_path)
 
-        return mockup_path
+        if not external_storage:
+            return mockup_path
+        else:
+            uploaded = self.storage.upload(mockup_path)
+
+            if uploaded and uploaded.url:
+                os.remove(mockup_path)
+                return uploaded.url
+            else:
+                return mockup_path
