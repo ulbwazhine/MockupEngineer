@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/pypi/l/MockupEngineer">
     <img src="https://img.shields.io/github/repo-size/ulbwazhine/MockupEngineer">
   </p>
-  <p>An simple library for creating beautiful screenshots.</p>
+  <p>A simple library for creating beautiful screenshots.</p>
 </div>
 
 ## Navigation
