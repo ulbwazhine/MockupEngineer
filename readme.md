@@ -64,7 +64,7 @@ mockup.generate(template=mockup.templates[0],
 >>> /path/to/mockup
 ```
 
-##### `MockupEngineerInstance.generate` parameters:
+#### `MockupEngineerInstance.generate` parameters:
    * `template`: *Template* — Device template model, must be passed from *MockupEngineerInstance.templates* or *MockupEngineerInstance.get_templates()*.
    * `screenshot_path`: *str* — Absolute path to the image in **JPG, PNG format**.
    * `color`: *Optional[str]* — Optional parameter, force device color. Must be passed according to *Template.colors[**n**].color*
