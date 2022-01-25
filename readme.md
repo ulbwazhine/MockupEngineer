@@ -15,6 +15,7 @@
 * [Usage](https://github.com/ulbwazhine/MockupEngineer#usage)
   * [As a standalone application](https://github.com/ulbwazhine/MockupEngineer#as-a-standalone-application)
   * [In Python console](https://github.com/ulbwazhine/MockupEngineer#in-python-console)
+  * [MockupEngineerInstance.generate parameters](https://github.com/ulbwazhine/MockupEngineer#mockupengineerinstancegenerate-parameters)
 * [List of supported mockups](https://github.com/ulbwazhine/MockupEngineer#list-of-supported-mockups)
   * [Phones](https://github.com/ulbwazhine/MockupEngineer#phones)
   * [Tablets](https://github.com/ulbwazhine/MockupEngineer#tablets)
