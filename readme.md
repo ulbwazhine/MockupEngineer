@@ -137,6 +137,20 @@ Full list of all currently supported mockups
   * Just Black
   * Sorta Sage
 
+### Computers
+* [Apple iMac 21"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac212015/example.png) [4096 x 2304] (2015)
+  * Silver
+
+* [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/example.png) [2304 x 1440] (2016)
+  * Gold
+  * Space Gray
+
+* [Apple MacBook Pro 13"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro132015/example.png) [2560 x 1600] (2015)
+  * Silver
+
+* [Apple MacBook Pro 15"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro152015/example.png) [2880 x 1800] (2015)
+  * Silver
+
 ### Tablets
 * [Apple iPad 9](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipad9/example.png) [2160 x 1620] (2021)
   * Gold
@@ -161,11 +175,6 @@ Full list of all currently supported mockups
 
 * [Apple iPad Pro 4 12.9"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro134/example.png) [2732 x 2048] (2020)
   * Silver
-  * Space Gray
-
-### Computers
-* [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/example.png) [2304 x 1440] (2016)
-  * Gold
   * Space Gray
 
 ### Wearable devices
