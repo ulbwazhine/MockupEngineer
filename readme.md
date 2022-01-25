@@ -12,6 +12,7 @@
 ## Navigation
 * [Example](https://github.com/ulbwazhine/MockupEngineer#example)
 * [Install](https://github.com/ulbwazhine/MockupEngineer#install)
+  * [Update](https://github.com/ulbwazhine/MockupEngineer#update)
 * [Usage](https://github.com/ulbwazhine/MockupEngineer#usage)
   * [As a standalone application](https://github.com/ulbwazhine/MockupEngineer#as-a-standalone-application)
   * [In Python console](https://github.com/ulbwazhine/MockupEngineer#in-python-console)
@@ -33,6 +34,11 @@
 ## Install
 ```console
 $ python3 -m pip install MockupEngineer
+```
+
+### Update
+```console
+$ python3 -m pip install MockupEngineer --upgrade
 ```
 
 ## Usage
