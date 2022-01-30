@@ -21,12 +21,12 @@ class Device(Template):
                            "Silver": 'silver',
                            "Yellow": 'yellow'}
 
-        self.__portrait_width__ = 4216
-        self.__portrait_height__ = 2375
-        self.__portrait_x__ = 517
-        self.__portrait_y__ = 302
+        self.__portrait_width__ = 2008
+        self.__portrait_height__ = 1131
+        self.__portrait_x__ = 246
+        self.__portrait_y__ = 144
 
-        self.__landscape_width__ = 4216
-        self.__landscape_height__ = 2375
-        self.__landscape_x__ = 517
-        self.__landscape_y__ = 302
+        self.__landscape_width__ = 2008
+        self.__landscape_height__ = 1131
+        self.__landscape_x__ = 246
+        self.__landscape_y__ = 144
