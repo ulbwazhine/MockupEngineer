@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import List
 
-templates_path = os.path.join("/".join(os.path.dirname(os.path.abspath(__file__)).split('/')[:-1]), 'templates')
+templates_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates')
 
 
 def __list_all_templates():
