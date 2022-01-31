@@ -48,6 +48,10 @@ $ python3 -m pip install MockupEngineer --upgrade
 $ python3 -m MockupEngineer
 ```
 
+<div align="center">
+  <img width="70%" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/console_example.jpeg" alt="">
+</div>
+
 #### In Python console:
 
 ```python
