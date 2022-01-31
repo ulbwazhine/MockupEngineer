@@ -170,6 +170,13 @@ Full list of all currently supported mockups
 * [Apple MacBook Pro 15"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro152015/example.png) [2880 x 1800] (2015)
   * Silver
 
+* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162019/example.png) [3072 x 1920] (2019)
+  * Space Gray
+
+* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162021/example.png) [3456 x 2234] (2021)
+  * Silver
+  * Space Gray
+
 ### Tablets
 * [Apple iPad 9](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipad9/example.png) [2160 x 1620] (2021)
   * Gold
