@@ -49,7 +49,7 @@ $ python3 -m MockupEngineer
 ```
 
 <div align="center">
-  <img width="70%" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/console_example.jpeg" alt="">
+  <img width="70%" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/console_example.png" alt="Usage as a standalone application">
 </div>
 
 #### In Python console:
@@ -71,7 +71,7 @@ mockup.generate(template=mockup.templates[0],
 #### `MockupEngineerInstance.generate` parameters:
    * `template`: *Template* — Device template model, must be passed from *MockupEngineerInstance.templates* or *MockupEngineerInstance.get_templates()*.
    * `screenshot_path`: *str* — Absolute path to the image in **JPG, PNG format**.
-   * `color`: *Optional[str]* — Optional parameter, force device color. Must be passed according to *Template.colors[**n**].color*
+   * `color`: *Optional[str]* — Optional parameter, force device color. Must be passed according to *Template.colors[**n**].color*.
    * `orientation`: *str* — Optional parameter, force device orientation. Must be *landscape* or *portrait*.
    * `external_storage`: *Optional[bool]* — Optional parameter, true if you need to upload mockup on [TemporaryStorage](https://github.com/ulbwazhine/TemporaryStorage) (0x0.st etc)
 
