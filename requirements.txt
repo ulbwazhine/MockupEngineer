@@ -1,4 +1,4 @@
+setuptools>=60.5.0
+asyncio>=3.4.3
+TemporaryStorage>=2022.1.31.2
 Pillow>=8.4.0
-setuptools>=59.2.0
-MockupEngineer>=2022.1.23.18
-TemporaryStorage>=2022.1.25.3

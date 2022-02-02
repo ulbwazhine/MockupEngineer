@@ -1,77 +1,73 @@
+import hashlib
 import os
 
-from dataclasses import dataclass, field
+from configparser import ConfigParser
+from dataclasses import dataclass
 from pathlib import Path
-from typing import List
+from typing import Optional
 
 templates_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates')
 
 
-def __list_all_templates():
+def __list_all_templates__():
     all_templates = [x.name for x in Path(templates_path).iterdir()
                      if x.is_dir() and not str(x).startswith('__') and not str(x).endswith('__')]
     return all_templates
 
 
-ALL_TEMPLATES = sorted(__list_all_templates())
+ALL_TEMPLATES = sorted(__list_all_templates__())
 __all__ = ALL_TEMPLATES + ["ALL_TEMPLATES"]
 
 
-def default_factory_none() -> None:
-    return None
-
-
-def default_factory_false() -> bool:
-    return False
+@dataclass(frozen=False)
+class DeviceColor:
+    color: str
+    path: str
 
 
 @dataclass(frozen=False)
-class TemplateColor:
-    color: str = ''
-    portrait_path: str = field(default_factory=str)
-    landscape_path: str = field(default_factory=str)
-    
-    
+class DeviceImage:
+    width: int
+    height: int
+    x: int
+    y: int
+    mask: bool
+    mask_path: Optional[str]
+    rotate: bool
+
+
 @dataclass(frozen=False)
-class Template:
-    manufacturer: str = field(default_factory=str)
-    name: str = field(default_factory=str)
-    type: str = field(default_factory=str)
-    year: int = field(default_factory=int)
-    resolution: str = field(default_factory=str)
-    example_path: str = field(default_factory=str)
+class Device:
+    def __init__(self, path: str):
+        config = ConfigParser()
+        config.read(os.path.join(templates_path, path, 'config.ini'))
 
-    colors: List[TemplateColor] = field(default_factory=list)
+        self.id = hashlib.md5(str({s: dict(config.items(s)) for s in config.sections()}).encode()).hexdigest()
+        self.manufacturer: str = str(config.get('info', 'manufacturer'))
+        self.name: str = str(config.get('info', 'name'))
+        self.type: str = str(config.get('info', 'type'))
+        self.year: int = int(config.get('info', 'year'))
+        self.width: int = int(config.get('info', 'width'))
+        self.height: int = int(config.get('info', 'height'))
+        self.resolution: str = '{width} x {height}'.format(
+            width=self.width, height=self.height)
+        self.preview: str = str(os.path.join(templates_path, path, 'preview.png'))
 
-    __template_path__: str = field(default_factory=str)
-    __colors__: dict = field(default_factory=dict)
+        self.colors = [DeviceColor(
+            color=str(key).title(), path=str(os.path.join(templates_path, path, item))
+        ) for key, item in config['colors'].items()]
 
-    __use_mask__: bool = field(default_factory=default_factory_false)
+        self.image = DeviceImage(
+            width=int(config.get('image', 'width')),
+            height=int(config.get('image', 'height')),
+            x=int(config.get('image', 'x')),
+            y=int(config.get('image', 'y')),
+            mask=config.get('image', 'mask') == 'true',
+            mask_path=os.path.join(templates_path, path, 'mask.png') if config.get('image', 'mask') == 'true' else None,
+            rotate=config.get('image', 'rotate') == 'true')
 
-    __portrait_width__: int = field(default_factory=int)
-    __portrait_height__: int = field(default_factory=int)
-    __portrait_x__: int = field(default_factory=int)
-    __portrait_y__: int = field(default_factory=int)
-    __portrait_mask__: str = field(default_factory=default_factory_none)
-
-    __landscape_width__: int = field(default_factory=int)
-    __landscape_height__: int = field(default_factory=int)
-    __landscape_x__: int = field(default_factory=int)
-    __landscape_y__: int = field(default_factory=int)
-    __landscape_mask__: str = field(default_factory=default_factory_none)
+    def __str__(self):
+        return '<MockupEngineer.templates.Device {} {} {}>'.format(self.manufacturer, self.name, self.year)
 
     def __post_init__(self):
-        getattr(self, '__device_init__')()
-
-        self.example_path = '{}/{}/example.png'.format(templates_path, self.__template_path__)
-
-        self.colors = [
-            TemplateColor(
-                color=color,
-                portrait_path='{}/{}/{}/portrait.png'.format(templates_path, self.__template_path__, color_path),
-                landscape_path='{}/{}/{}/landscape.png'.format(templates_path, self.__template_path__, color_path),
-            ) for color, color_path in self.__colors__.items()]
-
-        if self.__use_mask__:
-            self.__portrait_mask__ = '{}/{}/portrait-mask.png'.format(templates_path, self.__template_path__)
-            self.__landscape_mask__ = '{}/{}/landscape-mask.png'.format(templates_path, self.__template_path__)
+        self.colors = sorted(self.colors, key=lambda a: a.color)

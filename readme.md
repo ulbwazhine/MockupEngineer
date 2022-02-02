@@ -80,141 +80,152 @@ mockup.generate(template=mockup.templates[0],
 Full list of all currently supported mockups
 
 ### Phones
-* [Samsung Galaxy S20](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20/example.png) [1440 x 3200] (2020)
-  * Cloud Blue
-  * Cosmic Grey
-  * Pink
 
-* [Samsung Galaxy S20 Ultra](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20/example.png) [1440 x 3200] (2020)
-  * Cosmic Black
-  * Cosmic Grey
+* [Samsung Galaxy S20](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20/preview.png) (2020) [1440 x 3200] 
+  * *Cloud Blue*
+  * *Cosmic Grey*
+  * *Pink*
 
-* [Apple iPhone 12](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12/example.png) [1170 x 2532] (2020)
-  * Black
-  * Blue
-  * Green
-  * PRODUCT RED
-  * White
+* [Samsung Galaxy S20 Ultra](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20ultra/preview.png) (2020) [1440 x 3200] 
+  * *Cosmic Black*
+  * *Cosmic Grey*
 
-* [Apple iPhone 12 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12mini/example.png) [1080 x 2340] (2020)
-  * Black
-  * Blue
-  * Green
-  * PRODUCT RED
-  * White
+* [Apple iPhone 12](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12/preview.png) (2020) [1170 x 2532] 
+  * *Black*
+  * *Blue*
+  * *Green*
+  * *Product Red*
+  * *White*
 
-* [Apple iPhone 12 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12pro/example.png) [1170 x 2532] (2020)
-  * Gold
-  * Graphite
-  * Pacific Blue
-  * Silver
+* [Apple iPhone 12 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12mini/preview.png) (2020) [1080 x 2340] 
+  * *Black*
+  * *Blue*
+  * *Green*
+  * *Product Red*
+  * *White*
 
-* [Apple iPhone 12 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/example.png) [1284 x 2778] (2020)
-  * Gold
-  * Graphite
-  * Pacific Blue
-  * Silver
+* [Apple iPhone 12 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12pro/preview.png) (2020) [1170 x 2532] 
+  * *Gold*
+  * *Graphite*
+  * *Pacific Blue*
+  * *Silver*
 
-* [Apple iPhone SE](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonese2020/example.png) [750 x 1334] (2020)
-  * Black
-  * PRODUCT RED
-  * White
+* [Apple iPhone 12 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/preview.png) (2020) [1284 x 2778] 
+  * *Gold*
+  * *Graphite*
+  * *Pacific Blue*
+  * *Silver*
 
-* [Apple iPhone Xr](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexr/example.png) [828 x 1792] (2018)
-  * Blue
-  * Coral
-  * PRODUCT RED
-  * Silver
-  * Space Gray
-  * Yellow
+* [Apple iPhone SE](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonese2020/preview.png) (2020) [750 x 1334] 
+  * *Black*
+  * *Product Red*
+  * *White*
 
-* [Google Pixel](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel/example.png) [1080 x 1920] (2016)
-  * Quite Black
-  * Really Blue
-  * Very Silver
+* [Apple iPhone Xr](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexr/preview.png) (2018) [828 x 1792] 
+  * *Blue*
+  * *Coral*
+  * *Product Red*
+  * *Silver*
+  * *Space Gray*
+  * *Yellow*
 
-* [Google Pixel 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4/example.png) [1080 x 2280] (2019)
-  * Clearly White
-  * Just Black
-  * Oh So Orange
+* [Apple iPhone Xs](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexs/preview.png) (2019) [1125 x 2436] 
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Google Pixel 4 XL](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4xl/example.png) [1440 x 3040] (2019)
-  * Clearly White
-  * Just Black
-  * Oh So Orange
+* [Apple iPhone Xs Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexsmax/preview.png) (2019) [1242 x 2688] 
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Google Pixel 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel5/example.png) [1080 x 2340] (2020)
-  * Just Black
-  * Sorta Sage
+* [Google Pixel](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel/preview.png) (2016) [1080 x 1920] 
+  * *Quite Black*
+  * *Really Blue*
+  * *Very Silver*
+
+* [Google Pixel 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4/preview.png) (2019) [1080 x 2280] 
+  * *Just Black*
+  * *Clearly White*
+  * *Oh So Orange*
+
+* [Google Pixel 4 XL](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4xl/preview.png) (2019) [1440 x 3040] 
+  * *Just Black*
+  * *Clearly White*
+  * *Oh So Orange*
+
+* [Google Pixel 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel5/preview.png) (2020) [1080 x 2340] 
+  * *Just Black*
+  * *Sorta Sage*
 
 ### Computers
-* [Apple iMac 21"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac212015/example.png) [4096 x 2304] (2015)
-  * Silver
 
-* [Apple iMac 24"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac242021/example.png) [4480 x 2520] (2021)
-  * Blue
-  * Green
-  * Orange
-  * Pink
-  * Purple
-  * Silver
-  * Yellow
+* [Apple iMac 21"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac212015/preview.png) (2015) [4096 x 2304] 
+  * *Silver*
 
-* [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/example.png) [2304 x 1440] (2016)
-  * Gold
-  * Space Gray
+* [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/preview.png) (2016) [2304 x 1440] 
+  * *Space Gray*
+  * *Gold*
 
-* [Apple MacBook Pro 13"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro132015/example.png) [2560 x 1600] (2015)
-  * Silver
+* [Apple MacBook Pro 13"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro132015/preview.png) (2015) [2560 x 1600] 
+  * *Silver*
 
-* [Apple MacBook Pro 15"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro152015/example.png) [2880 x 1800] (2015)
-  * Silver
+* [Apple MacBook Pro 15"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro152015/preview.png) (2015) [2880 x 1800] 
+  * *Silver*
 
-* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162019/example.png) [3072 x 1920] (2019)
-  * Space Gray
+* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162019/preview.png) (2019) [3072 x 1920] 
+  * *Space Gray*
 
-* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162021/example.png) [3456 x 2234] (2021)
-  * Silver
-  * Space Gray
+* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162021/preview.png) (2021) [3456 x 2234] 
+  * *Silver*
+  * *Space Gray*
+
+* [Google Pixelbook Go](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixelbookgo/preview.png) (2019) [1920 x 1080] 
+  * *Just Black*
+
+* [Apple Pro Display XDR](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/prodisplayxdr/preview.png) (2019) [6016 x 3384] 
+  * *Silver*
 
 ### Tablets
-* [Apple iPad 9](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipad9/example.png) [2160 x 1620] (2021)
-  * Gold
-  * Silver
-  * Space Gray
 
-* [Apple iPad Air 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadair4/example.png) [2360 x 1640] (2020)
-  * Green
-  * Rose Gold
-  * Silver
-  * Sky Blue
-  * Space Gray
+* [Apple iPad 9](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipad9/preview.png) (2021) [2160 x 1620] 
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Apple iPad Mini 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadmini5/example.png) [2048 x 1536] (2021)
-  * Gold
-  * Silver
-  * Space Gray
+* [Apple iPad Air 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadair4/preview.png) (2020) [2360 x 1640] 
+  * *Green*
+  * *Rose Gold*
+  * *Silver*
+  * *Sky Blue*
+  * *Space Gray*
 
-* [Apple iPad Pro 4 11"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro114/example.png) [2388 x 1668] (2020)
-  * Silver
-  * Space Gray
+* [Apple iPad Mini 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadmini5/preview.png) (2021) [2048 x 1536] 
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Apple iPad Pro 4 12.9"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro134/example.png) [2732 x 2048] (2020)
-  * Silver
-  * Space Gray
+* [Apple iPad Pro 4 11"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro114/preview.png) (2020) [2388 x 1668] 
+  * *Silver*
+  * *Space Gray*
+
+* [Apple iPad Pro 4 12.9"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro134/preview.png) (2020) [2732 x 2048] 
+  * *Silver*
+  * *Space Gray*
 
 ### Wearable devices
-* [Apple Watch Series 6 44mm](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/watchseries644mm/example.png) [368 x 448] (2020)
-  * Aluminum Case - Blue
-  * Aluminum Case - Gold
-  * Aluminum Case - PRODUCT RED
-  * Aluminum Case - Silver
-  * Aluminum Case - Space Gray
-  * Stainless Steel Case - Gold
-  * Stainless Steel Case - Graphite
-  * Stainless Steel Case - Silver
-  * Titanium Case - Dark
-  * Titanium Case - Light
+
+* [Apple Watch Series 6 44mm](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/watchseries644mm/preview.png) (2020) [368 x 448] 
+  * *Aluminum Case - Blue*
+  * *Aluminum Case - Gold*
+  * *Aluminum Case - Space Gray*
+  * *Aluminum Case - Silver*
+  * *Aluminum Case - Product Red*
+  * *Titanium Case - Light*
+  * *Titanium Case - Dark*
+  * *Stainless Steel Case - Gold*
+  * *Stainless Steel Case - Graphite*
+  * *Stainless Steel Case - Silver*
 
 You can help the project by adding support for new mockups by contributing on [GitHub](https://github.com/ulbwazhine/MockupEngineer).
 
