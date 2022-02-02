@@ -3,6 +3,7 @@ import os
 import shutil
 
 from FluentGenerator import FluentImage
+from PIL import Image
 from jinja2 import Template
 
 from MockupEngineer import MockupEngineerInstance, generated_path
@@ -11,14 +12,32 @@ from MockupEngineer import MockupEngineerInstance, generated_path
 def create_examples():
     mockup = MockupEngineerInstance()
 
-    for template in mockup.templates:
-        screenshot = FluentImage(
-            colors=10, width=template.image.width, height=template.image.height, background='white').generate()
-        mockuped = mockup.generate(template_id=template.id, screenshot_path=screenshot)
-        os.remove(screenshot)
-        shutil.move(mockuped, template.preview)
+    max_height = 1000
+    max_width = 1000
 
-    os.removedirs(generated_path)
+    for template in mockup.templates:
+        screenshot_path = FluentImage(
+            colors=10, width=template.image.width, height=template.image.height, background='white').generate()
+        mockup_path = mockup.generate(template_id=template.id, screenshot_path=screenshot_path)
+        os.remove(screenshot_path)
+        shutil.move(mockup_path, template.preview)
+
+        mockup_img = Image.open(template.preview)
+        background_img = Image.new('RGBA', mockup_img.size, (255, 255, 255, 255))
+        background_img.paste(mockup_img, (0, 0), mockup_img)
+
+        if background_img.size[0] > max_width or background_img.size[1] > max_height:
+            if background_img.size[0] > background_img.size[1]:
+                width = max_width
+                height = int(background_img.size[1] * (max_width / background_img.size[0]))
+            else:
+                width = int(background_img.size[0] * (max_height / background_img.size[1]))
+                height = max_height
+
+            background_img = background_img.resize((width, height), Image.ANTIALIAS)
+        background_img.save(template.preview)
+
+    shutil.rmtree(generated_path)
 
 
 def create_readme():

@@ -10,6 +10,7 @@
 </div>
 
 ## Navigation
+
 * [Example](https://github.com/ulbwazhine/MockupEngineer#example)
 * [Install](https://github.com/ulbwazhine/MockupEngineer#install)
   * [Update](https://github.com/ulbwazhine/MockupEngineer#update)
@@ -30,6 +31,9 @@
   <img width="375px" src="https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/preview.png" alt="Apple iPhone 12 Pro Max Mockup">
   <p>Apple iPhone 12 Pro Max Mockup</p>
 </div>
+
+### Notice
+The quality of all examples is much worse than real mockups, this is due to the project size limit on PyPI.
 
 ## Install
 ```console

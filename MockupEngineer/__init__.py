@@ -26,46 +26,6 @@ class MockupEngineerInstance:
             except Exception as e:
                 self.logger.warning('Failed to load "{}" module: {}'.format(template, e))
 
-    def __create_mockups_list__(self) -> str:
-        output = list()
-        available_templates = self.get_templates()
-        specified_keys = {"pc": 'Computers',
-                          'wear': 'Wearable devices'}
-
-        for key, item in available_templates.items():
-            output.append(
-                '### {}'.format('{}s'.format(key.title()) if key not in specified_keys.keys() else specified_keys[key]))
-
-            for template in item:
-                output.append(
-                    '* [{manufacturer} {name}](https://raw.githubusercontent.com/'
-                    'ulbwazhine/MockupEngineer/main/MockupEngineer/'
-                    'templates/{path}/example.png) [{resolution}] ({year})'.format(
-                        manufacturer=template.manufacturer, name=template.name,
-                        path=os.path.basename(os.path.dirname(template.preview)),
-                        resolution=template.resolution, year=template.year))
-
-                for color in sorted(template.colors, key=lambda a: a.color):
-                    output.append('  * {}'.format(color.color))
-
-                output.append('')
-
-        return '\n'.join(output)
-
-    def __create_examples__(self, example_path: str) -> None:
-        for template in self.templates:
-            if os.path.isfile(template.preview):
-                os.remove(template.preview)
-
-            mockup_path = self.generate(template.id, example_path)
-            mockup_img = Image.open(mockup_path)
-            background_img = Image.new('RGBA', mockup_img.size, (255, 255, 255, 255))
-            background_img.paste(mockup_img, (0, 0), mockup_img)
-
-            background_img.save(template.preview)
-
-            os.remove(mockup_path)
-
     def get_template(self, template_id: str) -> Optional[Device]:
         for template in self.templates:
             if template.id == template_id:
