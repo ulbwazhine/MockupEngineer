@@ -167,9 +167,21 @@ Full list of all currently supported mockups
 * [Apple iMac 21"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac212015/preview.png) (2015) [4096 x 2304] 
   * *Silver*
 
+* [Apple iMac 24"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac242021/preview.png) (2021) [4480 x 2520] 
+  * *Green*
+  * *Yellow*
+  * *Orange*
+  * *Pink*
+  * *Purple*
+  * *Blue*
+  * *Silver*
+
 * [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/preview.png) (2016) [2304 x 1440] 
   * *Space Gray*
   * *Gold*
+
+* [Apple MacBook Air (M1)](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookair2020/preview.png) (2020) [2560 x 1600] 
+  * *Silver*
 
 * [Apple MacBook Pro 13"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro132015/preview.png) (2015) [2560 x 1600] 
   * *Silver*

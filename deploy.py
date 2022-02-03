@@ -12,8 +12,7 @@ from MockupEngineer import MockupEngineerInstance, generated_path
 def create_examples():
     mockup = MockupEngineerInstance()
 
-    max_height = 1000
-    max_width = 1000
+    max_size = 1000
 
     for template in mockup.templates:
         screenshot_path = FluentImage(
@@ -26,13 +25,13 @@ def create_examples():
         background_img = Image.new('RGBA', mockup_img.size, (255, 255, 255, 255))
         background_img.paste(mockup_img, (0, 0), mockup_img)
 
-        if background_img.size[0] > max_width or background_img.size[1] > max_height:
+        if background_img.size[0] > max_size or background_img.size[1] > max_size:
             if background_img.size[0] > background_img.size[1]:
-                width = max_width
-                height = int(background_img.size[1] * (max_width / background_img.size[0]))
+                width = max_size
+                height = int(background_img.size[1] * (max_size / background_img.size[0]))
             else:
-                width = int(background_img.size[0] * (max_height / background_img.size[1]))
-                height = max_height
+                width = int(background_img.size[0] * (max_size / background_img.size[1]))
+                height = max_size
 
             background_img = background_img.resize((width, height), Image.ANTIALIAS)
         background_img.save(template.preview)
