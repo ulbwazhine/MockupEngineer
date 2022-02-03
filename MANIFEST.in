@@ -1,3 +1,3 @@
-global-include *.md *.png *.ini
+global-include *.md *.png *.ini *.txt
 global-exclude ./generated
 exclude deploy.py readme-template.md .gitignore

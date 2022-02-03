@@ -79,6 +79,6 @@ def run_pypi():
 
 if __name__ == '__main__':
     create_readme()
-    create_examples()
+    # create_examples()
     bump_version()
     run_pypi()
