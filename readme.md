@@ -120,6 +120,32 @@ Full list of all currently supported mockups
   * *Pacific Blue*
   * *Silver*
 
+* [Apple iPhone 13](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13/preview.png) (2021) [1170 x 2532] 
+  * *Blue*
+  * *Midnight*
+  * *Pink*
+  * *Product Red*
+  * *Starlight*
+
+* [Apple iPhone 13 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13mini/preview.png) (2021) [1080 x 2340] 
+  * *Blue*
+  * *Midnight*
+  * *Pink*
+  * *Product Red*
+  * *Starlight*
+
+* [Apple iPhone 13 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13pro/preview.png) (2021) [1170 x 2532] 
+  * *Gold*
+  * *Graphite*
+  * *Sierra Blue*
+  * *Silver*
+
+* [Apple iPhone 13 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13promax/preview.png) (2021) [1284 x 2778] 
+  * *Gold*
+  * *Graphite*
+  * *Sierra Blue*
+  * *Silver*
+
 * [Apple iPhone SE](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonese2020/preview.png) (2020) [750 x 1334] 
   * *Black*
   * *Product Red*

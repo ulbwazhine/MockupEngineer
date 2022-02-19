@@ -1,4 +1,4 @@
-import os
+import webbrowser
 
 from MockupEngineer import MockupEngineerInstance
 
@@ -22,7 +22,7 @@ def main():
     print('- - - - - - - - - -\nWorking...')
     mockup = mockup.generate(template.id, screenshot, color, external_storage=True)
     print('- - - - - - - - - -\nSuccess: {}'.format(mockup))
-    os.system('open {}'.format(mockup))
+    webbrowser.open(mockup, new=0, autoraise=True)
 
 
 if __name__ == '__main__':
