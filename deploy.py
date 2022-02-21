@@ -43,9 +43,7 @@ def create_readme():
     mockup = MockupEngineerInstance()
 
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'readme-template.md'), 'r') as f:
-        data = Template(f.read()).render(templates=mockup.get_templates(), os=os,
-                                         specified_keys={"pc": 'Computers',
-                                                         'wear': 'Wearable devices'})
+        data = Template(f.read()).render(templates=mockup.get_templates(), os=os, enumerate=enumerate)
 
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'readme.md'), 'w') as f:
         f.write(data)
@@ -78,7 +76,7 @@ def run_pypi():
 
 
 if __name__ == '__main__':
-    # create_readme()
+    create_readme()
     # create_examples()
-    # bump_version()
+    bump_version()
     run_pypi()

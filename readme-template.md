@@ -63,7 +63,7 @@ from MockupEngineer import MockupEngineerInstance
 
 mockup = MockupEngineerInstance()
 
-mockup.generate(template=mockup.templates[0],
+mockup.generate(template_id=mockup.templates[0].id,
                 screenshot_path='/path/to/screenshot',
                 color=mockup.templates[0].colors[0].color)
 ```
@@ -73,7 +73,7 @@ mockup.generate(template=mockup.templates[0],
 ```
 
 #### `MockupEngineerInstance.generate` parameters:
-   * `template`: *Template* — Device template model, must be passed from *MockupEngineerInstance.templates* or *MockupEngineerInstance.get_templates()*.
+   * `template_id`: *int* — Device template id, must be passed from *MockupEngineerInstance.templates* or *MockupEngineerInstance.get_templates()*.
    * `screenshot_path`: *str* — Absolute path to the image in **JPG, PNG format**.
    * `color`: *Optional[str]* — Optional parameter, force device color. Must be passed according to *Template.colors[**n**].color*.
    * `orientation`: *str* — Optional parameter, force device orientation. Must be *landscape* or *portrait*.
@@ -83,10 +83,13 @@ mockup.generate(template=mockup.templates[0],
 
 Full list of all currently supported mockups
 {% for a, b in templates.items() %}
-### {{'{}s'.format(a.title()) if a not in specified_keys.keys() else specified_keys[a]}}
-{% for c in b %}
-* [{{c.manufacturer}} {{c.name}}](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/{{os.path.basename(os.path.dirname(c.preview))}}/preview.png) ({{c.year}}) [{{c.resolution}}] 
-{% for d in c.colors %}  * *{{d.color}}*
+### {{b.title}}
+{% for c in b.templates %}
+* [{{c.manufacturer}} {{c.name}}](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/{{os.path.basename(os.path.dirname(c.preview))}}/preview.png) ({{c.year}}) [{{c.resolution}}]   
+  * Author: [@{{c.about.author}}]({{c.about.url}}) [{{c.about.created}}]
+  * ID: `{{c.id}}`
+  * Colors:
+{% for d in c.colors %}  * * *{{d.color}}*
 {% endfor %}{% endfor %}{% endfor %}
 You can help the project by adding support for new mockups by contributing on [GitHub](https://github.com/ulbwazhine/MockupEngineer).
 

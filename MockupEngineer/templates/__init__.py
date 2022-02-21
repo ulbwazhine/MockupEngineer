@@ -1,10 +1,13 @@
+import datetime
 import hashlib
 import os
 
-from configparser import ConfigParser
+from configparser import ConfigParser, NoOptionError, NoSectionError
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
+
+from MockupEngineer.utils.about import author, author_url
 
 templates_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates')
 
@@ -37,6 +40,13 @@ class DeviceImage:
 
 
 @dataclass(frozen=False)
+class About:
+    author: str
+    url: str
+    created: str
+
+
+@dataclass(frozen=False)
 class Device:
     def __init__(self, path: str):
         config = ConfigParser()
@@ -66,8 +76,45 @@ class Device:
             mask_path=os.path.join(templates_path, path, 'mask.png') if config.get('image', 'mask') == 'true' else None,
             rotate=config.get('image', 'rotate') == 'true')
 
+        self.__path__ = path
+
+        self.about = About(
+            author=self.__get_author__(config),
+            url=self.__get_url__(config),
+            created=self.__get_creation_date__(config)
+        )
+
     def __str__(self):
         return '<MockupEngineer.templates.Device {} {} {}>'.format(self.manufacturer, self.name, self.year)
 
     def __post_init__(self):
         self.colors = sorted(self.colors, key=lambda a: a.color)
+
+    def __write_config__(self, config: ConfigParser) -> None:
+        with open(os.path.join(templates_path, self.__path__, 'config.ini'), 'w', encoding='utf8') as f:
+            config.write(f)
+
+    def __get_author__(self, config: ConfigParser) -> str:
+        try:
+            return config.get('about', 'author')
+        except (NoOptionError, NoSectionError):
+            if 'about' not in config.sections():
+                config.add_section('about')
+            config['about']['author'] = author()
+            self.__write_config__(config)
+
+    def __get_url__(self, config: ConfigParser) -> str:
+        try:
+            return config.get('about', 'url')
+        except (NoOptionError, NoSectionError):
+            if 'about' not in config.sections():
+                config.add_section('about')
+            config['about']['url'] = author_url()
+            self.__write_config__(config)
+
+    def __get_creation_date__(self, config: ConfigParser) -> str:
+        dates = [os.path.getmtime(str(os.path.join(templates_path, self.__path__, item))) for _, item in config['colors'].items()]
+        date = datetime.datetime.utcfromtimestamp(max(dates)) if dates else datetime.datetime.utcnow()
+        config['about']['created'] = date.strftime('%d.%m.%Y')
+        self.__write_config__(config)
+        return config.get('about', 'created')

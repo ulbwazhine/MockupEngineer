@@ -7,7 +7,10 @@ from PIL import Image
 
 from MockupEngineer import templates
 from MockupEngineer.templates import Device, ALL_TEMPLATES
-from MockupEngineer.utils import random_string
+from MockupEngineer.utils import random_string, get_title
+from MockupEngineer.utils.about import author
+
+__author__ = author()
 
 generated_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'generated')
 if not os.path.exists(generated_path):
@@ -35,9 +38,12 @@ class MockupEngineerInstance:
         dicted = dict()
         for template in self.templates:
             if template.type in dicted.keys():
-                dicted[template.type].append(template)
+                dicted[template.type]["templates"].append(template)
             else:
-                dicted[template.type] = [template]
+                dicted[template.type] = {
+                    "title": get_title(template.type),
+                    "templates": [template]
+                }
         return dicted
 
     def generate(self, template_id: str,
