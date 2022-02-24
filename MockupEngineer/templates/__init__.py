@@ -1,4 +1,3 @@
-import datetime
 import hashlib
 import os
 
@@ -43,14 +42,22 @@ class DeviceImage:
 class About:
     author: str
     url: str
-    created: str
 
 
 @dataclass(frozen=False)
 class Device:
     def __init__(self, path: str):
+        self.__path__ = path
+
         config = ConfigParser()
         config.read(os.path.join(templates_path, path, 'config.ini'))
+
+        if int(config.get('info', 'width')) < int(config.get('info', 'height')):
+            height = config.get('info', 'width')
+            width = config.get('info', 'height')
+            config['info']['width'] = width
+            config['info']['height'] = height
+            self.__write_config__(config)
 
         self.id = hashlib.md5(str({s: dict(config.items(s)) for s in config.sections()}).encode()).hexdigest()
         self.manufacturer: str = str(config.get('info', 'manufacturer'))
@@ -76,12 +83,9 @@ class Device:
             mask_path=os.path.join(templates_path, path, 'mask.png') if config.get('image', 'mask') == 'true' else None,
             rotate=config.get('image', 'rotate') == 'true')
 
-        self.__path__ = path
-
         self.about = About(
             author=self.__get_author__(config),
-            url=self.__get_url__(config),
-            created=self.__get_creation_date__(config)
+            url=self.__get_url__(config)
         )
 
     def __str__(self):
@@ -111,10 +115,3 @@ class Device:
                 config.add_section('about')
             config['about']['url'] = author_url()
             self.__write_config__(config)
-
-    def __get_creation_date__(self, config: ConfigParser) -> str:
-        dates = [os.path.getmtime(str(os.path.join(templates_path, self.__path__, item))) for _, item in config['colors'].items()]
-        date = datetime.datetime.utcfromtimestamp(max(dates)) if dates else datetime.datetime.utcnow()
-        config['about']['created'] = date.strftime('%d.%m.%Y')
-        self.__write_config__(config)
-        return config.get('about', 'created')

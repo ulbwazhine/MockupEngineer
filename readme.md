@@ -85,291 +85,198 @@ Full list of all currently supported mockups
 
 ### Phones
 
-* [Samsung Galaxy S20](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20/preview.png) (2020) [1440 x 3200]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `84b30848f1af25c9a3bff6583bbbe75a`
-  * Colors:
-  * * *Cloud Blue*
-  * * *Cosmic Grey*
-  * * *Pink*
+* [Samsung Galaxy S20](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20/preview.png) (2020) [3200 x 1440] - `8080d01d4bdd37843088986938af2ae0`
+  * *Cloud Blue*
+  * *Cosmic Grey*
+  * *Pink*
 
-* [Samsung Galaxy S20 Ultra](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20ultra/preview.png) (2020) [1440 x 3200]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `c4168e005483c3579bef74898a4b0384`
-  * Colors:
-  * * *Cosmic Black*
-  * * *Cosmic Grey*
+* [Samsung Galaxy S20 Ultra](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/galaxys20ultra/preview.png) (2020) [3200 x 1440] - `86fa8df7653bb8559cfc49b8670b16bc`
+  * *Cosmic Black*
+  * *Cosmic Grey*
 
-* [Apple iPhone 12](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12/preview.png) (2020) [1170 x 2532]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `1648990cfee89db1d6cb744c998e783a`
-  * Colors:
-  * * *Black*
-  * * *Blue*
-  * * *Green*
-  * * *Product Red*
-  * * *White*
+* [Apple iPhone 12](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12/preview.png) (2020) [2532 x 1170] - `3596ecc24abae25279feddb34dd72a0e`
+  * *Black*
+  * *Blue*
+  * *Green*
+  * *Product Red*
+  * *White*
 
-* [Apple iPhone 12 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12mini/preview.png) (2020) [1080 x 2340]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `aea792f252c0ba0847741c0a4a6dd3ca`
-  * Colors:
-  * * *Black*
-  * * *Blue*
-  * * *Green*
-  * * *Product Red*
-  * * *White*
+* [Apple iPhone 12 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12mini/preview.png) (2020) [2340 x 1080] - `692048fda2b0b645f705066d522c12b8`
+  * *Black*
+  * *Blue*
+  * *Green*
+  * *Product Red*
+  * *White*
 
-* [Apple iPhone 12 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12pro/preview.png) (2020) [1170 x 2532]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `b25e4e76e2083e389761d3495a347e58`
-  * Colors:
-  * * *Gold*
-  * * *Graphite*
-  * * *Pacific Blue*
-  * * *Silver*
+* [Apple iPhone 12 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12pro/preview.png) (2020) [2532 x 1170] - `753cf086117da37d8c2e44e974880a94`
+  * *Gold*
+  * *Graphite*
+  * *Pacific Blue*
+  * *Silver*
 
-* [Apple iPhone 12 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/preview.png) (2020) [1284 x 2778]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `658c22b16917a70e5e1703f300ef98fe`
-  * Colors:
-  * * *Gold*
-  * * *Graphite*
-  * * *Pacific Blue*
-  * * *Silver*
+* [Apple iPhone 12 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone12promax/preview.png) (2020) [2778 x 1284] - `5509eab3ac4c47315753b2e50faeb633`
+  * *Gold*
+  * *Graphite*
+  * *Pacific Blue*
+  * *Silver*
 
-* [Apple iPhone 13](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13/preview.png) (2021) [1170 x 2532]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [19.02.2022]
-  * ID: `e03132ca8b4b0483e9d8f4a1ec1be1f5`
-  * Colors:
-  * * *Blue*
-  * * *Midnight*
-  * * *Pink*
-  * * *Product Red*
-  * * *Starlight*
+* [Apple iPhone 13](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13/preview.png) (2021) [2532 x 1170] - `33f683bda9f3beb5d0ce8ae5ef9e7fc4`
+  * *Blue*
+  * *Midnight*
+  * *Pink*
+  * *Product Red*
+  * *Starlight*
 
-* [Apple iPhone 13 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13mini/preview.png) (2021) [1080 x 2340]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [19.02.2022]
-  * ID: `d0346fb29c4c3de9ff70953a7ae3bfee`
-  * Colors:
-  * * *Blue*
-  * * *Midnight*
-  * * *Pink*
-  * * *Product Red*
-  * * *Starlight*
+* [Apple iPhone 13 Mini](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13mini/preview.png) (2021) [2340 x 1080] - `09340db4628d41418a4ed472db07c60e`
+  * *Blue*
+  * *Midnight*
+  * *Pink*
+  * *Product Red*
+  * *Starlight*
 
-* [Apple iPhone 13 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13pro/preview.png) (2021) [1170 x 2532]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [19.02.2022]
-  * ID: `1c6f40f0490c7e0cf35de1c96af5c720`
-  * Colors:
-  * * *Gold*
-  * * *Graphite*
-  * * *Sierra Blue*
-  * * *Silver*
+* [Apple iPhone 13 Pro](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13pro/preview.png) (2021) [2532 x 1170] - `f0247d613f7d390cfb3362fd7242e515`
+  * *Gold*
+  * *Graphite*
+  * *Sierra Blue*
+  * *Silver*
 
-* [Apple iPhone 13 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13promax/preview.png) (2021) [1284 x 2778]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [19.02.2022]
-  * ID: `edc57edf104fdba42fdf935986b09ab8`
-  * Colors:
-  * * *Gold*
-  * * *Graphite*
-  * * *Sierra Blue*
-  * * *Silver*
+* [Apple iPhone 13 Pro Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphone13promax/preview.png) (2021) [2778 x 1284] - `d95345535d98fcc6f4030e1d3ca62052`
+  * *Gold*
+  * *Graphite*
+  * *Sierra Blue*
+  * *Silver*
 
-* [Apple iPhone SE](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonese2020/preview.png) (2020) [750 x 1334]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `7ed0bde8cf28335afb6bf7e8fc90806b`
-  * Colors:
-  * * *Black*
-  * * *Product Red*
-  * * *White*
+* [Apple iPhone SE](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonese2020/preview.png) (2020) [1334 x 750] - `553673b4367e8ebf59067d764b45e9fd`
+  * *Black*
+  * *Product Red*
+  * *White*
 
-* [Apple iPhone Xr](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexr/preview.png) (2018) [828 x 1792]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `5213bfd57a03c81ad4dc702952810ee6`
-  * Colors:
-  * * *Blue*
-  * * *Coral*
-  * * *Product Red*
-  * * *Silver*
-  * * *Space Gray*
-  * * *Yellow*
+* [Apple iPhone Xr](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexr/preview.png) (2018) [1792 x 828] - `6ccede90e5879fd87f85cfb2039247b3`
+  * *Blue*
+  * *Coral*
+  * *Product Red*
+  * *Silver*
+  * *Space Gray*
+  * *Yellow*
 
-* [Apple iPhone Xs](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexs/preview.png) (2019) [1125 x 2436]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `4b17c9428565db596f647b448656b744`
-  * Colors:
-  * * *Gold*
-  * * *Silver*
-  * * *Space Gray*
+* [Apple iPhone Xs](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexs/preview.png) (2019) [2436 x 1125] - `f4128697b9cb1963cc4d14727872fa44`
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Apple iPhone Xs Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexsmax/preview.png) (2019) [1242 x 2688]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `2c9c1c6b8c0b598fe1c1aca4c1f334f8`
-  * Colors:
-  * * *Gold*
-  * * *Silver*
-  * * *Space Gray*
+* [Apple iPhone Xs Max](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/iphonexsmax/preview.png) (2019) [2688 x 1242] - `16ebf01c894fb468c05a1b7c3e395d47`
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Google Pixel](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel/preview.png) (2016) [1080 x 1920]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `ede34489f377fcc7852a326dd79c2550`
-  * Colors:
-  * * *Quite Black*
-  * * *Really Blue*
-  * * *Very Silver*
+* [Google Pixel](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel/preview.png) (2016) [1920 x 1080] - `c7076ff96733f11e2cd8179fc2d5e7a4`
+  * *Quite Black*
+  * *Really Blue*
+  * *Very Silver*
 
-* [Google Pixel 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4/preview.png) (2019) [1080 x 2280]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `673398cd2adaadd60506fb0140b83ab9`
-  * Colors:
-  * * *Just Black*
-  * * *Clearly White*
-  * * *Oh So Orange*
+* [Google Pixel 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4/preview.png) (2019) [2280 x 1080] - `3bfff2be23c2c354403f5a622a804f64`
+  * *Just Black*
+  * *Clearly White*
+  * *Oh So Orange*
 
-* [Google Pixel 4 XL](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4xl/preview.png) (2019) [1440 x 3040]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `c55e7641f3ba76d7b777281b0ba4aa87`
-  * Colors:
-  * * *Just Black*
-  * * *Clearly White*
-  * * *Oh So Orange*
+* [Google Pixel 4 XL](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel4xl/preview.png) (2019) [3040 x 1440] - `7b0762b034f6c29f2c77a66bb388f59e`
+  * *Just Black*
+  * *Clearly White*
+  * *Oh So Orange*
 
-* [Google Pixel 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel5/preview.png) (2020) [1080 x 2340]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `870266635f047a49c2eae83f7d46e26e`
-  * Colors:
-  * * *Just Black*
-  * * *Sorta Sage*
+* [Google Pixel 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixel5/preview.png) (2020) [2340 x 1080] - `2707894cc5d336d0ba276e6306e9f001`
+  * *Just Black*
+  * *Sorta Sage*
 
 ### Computers
 
-* [Apple iMac 21"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac212015/preview.png) (2015) [4096 x 2304]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `385eb0911d0edb6821c18a2193bdadaf`
-  * Colors:
-  * * *Silver*
+* [Apple iMac 21"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac212015/preview.png) (2015) [4096 x 2304] - `71165ffd80a5db69ecd26e2e05ee1355`
+  * *Silver*
 
-* [Apple iMac 24"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac242021/preview.png) (2021) [4480 x 2520]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [03.02.2022]
-  * ID: `40a349f85ca132c2d6c1444db0be9561`
-  * Colors:
-  * * *Green*
-  * * *Yellow*
-  * * *Orange*
-  * * *Pink*
-  * * *Purple*
-  * * *Blue*
-  * * *Silver*
+* [Apple iMac 24"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/imac242021/preview.png) (2021) [4480 x 2520] - `808f7bc509565fb4bdaab7c7b5485a68`
+  * *Green*
+  * *Yellow*
+  * *Orange*
+  * *Pink*
+  * *Purple*
+  * *Blue*
+  * *Silver*
 
-* [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/preview.png) (2016) [2304 x 1440]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `f74ec99f02ed5fafbe1cb1767763ed91`
-  * Colors:
-  * * *Space Gray*
-  * * *Gold*
+* [Apple MacBook 12"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbook122016/preview.png) (2016) [2304 x 1440] - `4724b1349442f7fdaa60216d31cbd6a8`
+  * *Space Gray*
+  * *Gold*
 
-* [Apple MacBook Air (M1)](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookair2020/preview.png) (2020) [2560 x 1600]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [03.02.2022]
-  * ID: `1f3fe3fec5b92861b7958bc75f40fe95`
-  * Colors:
-  * * *Silver*
+* [Apple MacBook Air (M1)](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookair2020/preview.png) (2020) [2560 x 1600] - `d930de4882bee944ff19da75a4b6ee9f`
+  * *Silver*
 
-* [Apple MacBook Pro 13"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro132015/preview.png) (2015) [2560 x 1600]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `2f15fb3eb0dde3b76771f3090c6ddbb6`
-  * Colors:
-  * * *Silver*
+* [Apple MacBook Pro 13"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro132015/preview.png) (2015) [2560 x 1600] - `670487e7eaab6353af7f151f1da8622e`
+  * *Silver*
 
-* [Apple MacBook Pro 15"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro152015/preview.png) (2015) [2880 x 1800]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `ba492b242a78b7f49caa41f61b5b3418`
-  * Colors:
-  * * *Silver*
+* [Apple MacBook Pro 15"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro152015/preview.png) (2015) [2880 x 1800] - `4b33ac1e5b863a6b67f684d3e73a9796`
+  * *Silver*
 
-* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162019/preview.png) (2019) [3072 x 1920]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `0bfe5c7d2a8a4e5398090c3027791ed1`
-  * Colors:
-  * * *Space Gray*
+* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162019/preview.png) (2019) [3072 x 1920] - `ce29763748dd896d6db09f94c626ca4d`
+  * *Space Gray*
 
-* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162021/preview.png) (2021) [3456 x 2234]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `80467845e71272f0d8d2bd13490a73f3`
-  * Colors:
-  * * *Silver*
-  * * *Space Gray*
+* [Apple MacBook Pro 16"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/macbookpro162021/preview.png) (2021) [3456 x 2234] - `75da9011a54ecd48e3da2c20e2c8afd0`
+  * *Silver*
+  * *Space Gray*
 
-* [Google Pixelbook Go](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixelbookgo/preview.png) (2019) [1920 x 1080]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `6911ed9934b1c877a0b01c3750c2b79e`
-  * Colors:
-  * * *Just Black*
+* [Google Pixelbook Go](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/pixelbookgo/preview.png) (2019) [1920 x 1080] - `c6ef98219e013c1dca8480b3dba14caa`
+  * *Just Black*
 
-* [Apple Pro Display XDR](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/prodisplayxdr/preview.png) (2019) [6016 x 3384]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `8b728f1faab0389874db4bb0ae6244e5`
-  * Colors:
-  * * *Silver*
+* [Apple Pro Display XDR](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/prodisplayxdr/preview.png) (2019) [6016 x 3384] - `148a8f19517b4359cfe9db9092bb85a1`
+  * *Silver*
+
+* [Microsoft Surface Book](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/surfacebook/preview.png) (2015) [3000 x 2000] - `08816799dd7ebd63a9fe2e5a46f8b69c`
+  * *Platinum*
 
 ### Tablets
 
-* [Apple iPad 9](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipad9/preview.png) (2021) [2160 x 1620]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `9c1f043b21ef803bd467135b83105f0b`
-  * Colors:
-  * * *Gold*
-  * * *Silver*
-  * * *Space Gray*
+* [Apple iPad 9](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipad9/preview.png) (2021) [2160 x 1620] - `347347da85ed8817ecd8eefd8fe22a0e`
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Apple iPad Air 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadair4/preview.png) (2020) [2360 x 1640]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `569262bc590b30cfb296471c3c8a4af8`
-  * Colors:
-  * * *Green*
-  * * *Rose Gold*
-  * * *Silver*
-  * * *Sky Blue*
-  * * *Space Gray*
+* [Apple iPad Air 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadair4/preview.png) (2020) [2360 x 1640] - `9a644764f99ccbe46753de8516e053fe`
+  * *Green*
+  * *Rose Gold*
+  * *Silver*
+  * *Sky Blue*
+  * *Space Gray*
 
-* [Apple iPad Mini 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadmini5/preview.png) (2021) [2048 x 1536]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `7a8b3c603fe34817d9233e5b6afed174`
-  * Colors:
-  * * *Gold*
-  * * *Silver*
-  * * *Space Gray*
+* [Apple iPad Mini 5](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadmini5/preview.png) (2021) [2048 x 1536] - `d8e92692708b63e444300f3b6dfacc6f`
+  * *Gold*
+  * *Silver*
+  * *Space Gray*
 
-* [Apple iPad Pro 4 11"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro114/preview.png) (2020) [2388 x 1668]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `e47f6e3bb880a034866f59f97f612abe`
-  * Colors:
-  * * *Silver*
-  * * *Space Gray*
+* [Apple iPad Pro 4 11"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro114/preview.png) (2020) [2388 x 1668] - `a80a78a3f7492bb5d460c59de173bc88`
+  * *Silver*
+  * *Space Gray*
 
-* [Apple iPad Pro 4 12.9"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro134/preview.png) (2020) [2732 x 2048]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [31.01.2022]
-  * ID: `9a85db6aeb1d45c896daff67af785936`
-  * Colors:
-  * * *Silver*
-  * * *Space Gray*
+* [Apple iPad Pro 4 12.9"](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/ipadpro134/preview.png) (2020) [2732 x 2048] - `198018d62640d23de5ae4e3e6cbc5fd0`
+  * *Silver*
+  * *Space Gray*
+
+* [Microsoft Surface Pro 3](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/surfacepro3/preview.png) (2014) [2160 x 1440] - `d250f0d3f84dd0b972c152ee592fbc3a`
+  * *Platinum*
+
+* [Microsoft Surface Pro 4](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/surfacepro4/preview.png) (2015) [2736 x 1824] - `604015046fcf51f1a264bb0333269f80`
+  * *Platinum*
 
 ### Wearable devices
 
-* [Apple Watch Series 6 44mm](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/watchseries644mm/preview.png) (2020) [368 x 448]   
-  * Author: [@ulbwa](https://ulbwa.xyz) [01.02.2022]
-  * ID: `e055638cf7325a856ed0369dc8d0dcb1`
-  * Colors:
-  * * *Aluminum Case - Blue*
-  * * *Aluminum Case - Gold*
-  * * *Aluminum Case - Space Gray*
-  * * *Aluminum Case - Silver*
-  * * *Aluminum Case - Product Red*
-  * * *Titanium Case - Light*
-  * * *Titanium Case - Dark*
-  * * *Stainless Steel Case - Gold*
-  * * *Stainless Steel Case - Graphite*
-  * * *Stainless Steel Case - Silver*
+* [Apple Watch Series 6 44mm](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/watchseries644mm/preview.png) (2020) [448 x 368] - `085a3fafbdec1f728aed9882adc2c5b0`
+  * *Aluminum Case - Blue*
+  * *Aluminum Case - Gold*
+  * *Aluminum Case - Space Gray*
+  * *Aluminum Case - Silver*
+  * *Aluminum Case - Product Red*
+  * *Titanium Case - Light*
+  * *Titanium Case - Dark*
+  * *Stainless Steel Case - Gold*
+  * *Stainless Steel Case - Graphite*
+  * *Stainless Steel Case - Silver*
 
 You can help the project by adding support for new mockups by contributing on [GitHub](https://github.com/ulbwazhine/MockupEngineer).
 
