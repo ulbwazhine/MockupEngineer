@@ -6,7 +6,7 @@ from typing import List, Optional
 from PIL import Image
 
 from MockupEngineer import templates
-from MockupEngineer.templates import Device, ALL_TEMPLATES
+from MockupEngineer.templates import Device, ALL_TEMPLATES, parse_config
 from MockupEngineer.utils import random_string, get_title
 from MockupEngineer.utils.about import author
 
@@ -25,7 +25,7 @@ class MockupEngineerInstance:
 
         for template in ALL_TEMPLATES:
             try:
-                self.templates.append(Device(template))
+                self.templates.append(parse_config(template))
             except Exception as e:
                 self.logger.warning('Failed to load "{}" module: {}'.format(template, e))
 

@@ -68,15 +68,16 @@ def bump_version():
 
 
 def run_pypi():
+    print(f'cd "{os.path.dirname(os.path.abspath(__file__))}"')
+    print('python setup.py sdist')
+    print('execute: twine upload dist/*')
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    os.system("python3 setup.py sdist")
-    os.system("twine upload dist/*")
-    os.system("rm -rf \"dist\"")
-    os.system("rm -rf \"MockupEngineer.egg-info\"")
+    os.remove('dist')
+    os.remove('MockupEngineer.egg-info')
 
 
 if __name__ == '__main__':
-    create_readme()
-    create_examples()
-    bump_version()
+    # create_readme()
+    # create_examples()
+    # bump_version()
     run_pypi()
