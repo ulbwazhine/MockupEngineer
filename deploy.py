@@ -42,10 +42,10 @@ def create_examples():
 def create_readme():
     mockup = MockupEngineerInstance()
 
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'readme-template.md'), 'r') as f:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'readme-template.md'), 'r', encoding='utf8') as f:
         data = Template(f.read()).render(templates=mockup.get_templates(), os=os, enumerate=enumerate)
 
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'readme.md'), 'w') as f:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'readme.md'), 'w', encoding='utf8') as f:
         f.write(data)
 
 
@@ -70,14 +70,15 @@ def bump_version():
 def run_pypi():
     print(f'cd "{os.path.dirname(os.path.abspath(__file__))}"')
     print('python setup.py sdist')
-    print('execute: twine upload dist/*')
+    print('twine upload dist/*')
+    input()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     os.remove('dist')
     os.remove('MockupEngineer.egg-info')
 
 
 if __name__ == '__main__':
-    # create_readme()
+    create_readme()
     # create_examples()
-    # bump_version()
+    bump_version()
     run_pypi()

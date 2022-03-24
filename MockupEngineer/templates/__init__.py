@@ -24,6 +24,7 @@ __all__ = ALL_TEMPLATES + ["ALL_TEMPLATES"]
 class DeviceColor(BaseModel):
     color: str
     path: str
+    emoji: str
 
 
 class DeviceImage(BaseModel):
@@ -107,7 +108,7 @@ def parse_config(path: str) -> Device:
     kwargs['preview']: str = str(os.path.join(templates_path, path, 'preview.png'))
 
     kwargs['colors'] = sorted([DeviceColor(
-        color=str(key).title(), path=str(os.path.join(templates_path, path, item))
+        color=str(key).title(), path=str(os.path.join(templates_path, path, item)), emoji=parse_emoji(str(key))
     ) for key, item in config['colors'].items()], key=lambda a: a.color)
 
     kwargs['image'] = DeviceImage(
@@ -125,3 +126,27 @@ def parse_config(path: str) -> Device:
     )
 
     return Device(**kwargs)
+
+
+def parse_emoji(color: str):
+    if 'black' in color or 'graphite' in color or 'grey' \
+            in color or 'gray' in color or 'dark' in color or 'midnight' in color:
+        return '⬛️'
+    elif 'white' in color or 'silver' in color or 'light' in color or 'platinum' in color:
+        return '⬜️'
+    elif 'brown' in color:
+        return '🟫'
+    elif 'purple' in color or 'pink' in color:
+        return '🟪'
+    elif 'blue' in color:
+        return '🟦'
+    elif 'green' in color or 'coral' in color:
+        return '🟩'
+    elif 'yellow' in color or 'gold' in color:
+        return '🟨'
+    elif 'orange' in color:
+        return '🟧'
+    elif 'red' in color:
+        return '🟥'
+    else:
+        return '🔸'

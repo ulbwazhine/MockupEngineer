@@ -86,7 +86,7 @@ Full list of all currently supported mockups
 ### {{b.title}}
 {% for c in b.templates %}
 * [{{c.manufacturer}} {{c.name}}](https://raw.githubusercontent.com/ulbwazhine/MockupEngineer/main/MockupEngineer/templates/{{os.path.basename(os.path.dirname(c.preview))}}/preview.png) ({{c.year}}) [{{c.resolution}}] - `{{c.id}}`
-{% for d in c.colors %}  * *{{d.color}}*
+{% for d in c.colors %}  * *{{d.color}}* {{d.emoji}}
 {% endfor %}{% endfor %}{% endfor %}
 You can help the project by adding support for new mockups by contributing on [GitHub](https://github.com/ulbwazhine/MockupEngineer).
 
